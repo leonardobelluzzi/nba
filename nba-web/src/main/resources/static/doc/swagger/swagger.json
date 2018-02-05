@@ -1,0 +1,237 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "0.0.1",
+		"description": "Aplicação para monografia Leonardo Morales Belluzzi",
+		"title": "NBA - Dados"
+	},
+	"paths": {
+		"/game/defensive/stats/{teamHome}/{teamVisti}": {
+			"get": {
+				"tags": [
+					"game"
+				],
+				"summary": "Estimativa de resultados",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "teamHome",
+						"in": "path",
+						"description": "Time da casa",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "teamVisti",
+						"in": "path",
+						"description": "Visitante",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/variation/offensive/points": {
+			"get": {
+				"tags": [
+					"variation"
+				],
+				"summary": "Fornece a variação do cluster ofensivo",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Resultado K-means"
+					}
+				}
+			}
+		},
+		"/variation/defensive/points": {
+			"get": {
+				"tags": [
+					"variation"
+				],
+				"summary": "Fornece a variação do cluster defensivo",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Resultado K-means"
+					}
+				}
+			}
+		},
+		"/group/defensive/initial": {
+			"get": {
+				"tags": [
+					"group"
+				],
+				"summary": "Centroids defensivos iniciais da aplicação",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/group/offensive/initial": {
+			"get": {
+				"tags": [
+					"group"
+				],
+				"summary": "Centroids ofensivos iniciais da aplicação",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/group/defensive/final": {
+			"get": {
+				"tags": [
+					"group"
+				],
+				"summary": "Centroids defensivo finais da aplicação",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/group/offensive/final": {
+			"get": {
+				"tags": [
+					"group"
+				],
+				"summary": "Centroids ofensivos final da aplicação",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/group/offensive": {
+			"get": {
+				"tags": [
+					"group"
+				],
+				"summary": "Grupo final ofensivo",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/group/defensive": {
+			"get": {
+				"tags": [
+					"group"
+				],
+				"summary": "Grupo final defensivo",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/group/offensive/number": {
+			"get": {
+				"tags": [
+					"group"
+				],
+				"summary": "Numero de elementos no grupo final ofensivo",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/group/defensive/number": {
+			"get": {
+				"tags": [
+					"group"
+				],
+				"summary": "Numero de elementos no grupo final defensivo",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/team/list/offensive": {
+			"get": {
+				"tags": [
+					"team"
+				],
+				"summary": "Listar todos dados ofensivos",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		},
+		"/team/list/defensive": {
+			"get": {
+				"tags": [
+					"team"
+				],
+				"summary": "Listar todos dados defensivos",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Results game"
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		
+	}
+}
